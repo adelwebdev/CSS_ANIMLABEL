@@ -56,6 +56,10 @@ body::before {
   left: 0px;
   z-index: -1;
 }
+
+/* ici qu'on est focus sur l'input -> on veut donner un comportement au label, 
+aussi quand valid (c'est à dire lorsqu'il y a qlq chose d'écrit dans l'input) */
+/* on fait .form-control input:focus + label, et .form-control input:valid + label */
 .form-control input:focus + label,
 .form-control input:valid + label {
   color: darkcyan;
